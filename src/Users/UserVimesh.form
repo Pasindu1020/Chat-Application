@@ -1658,7 +1658,7 @@
                               <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="261" max="32767" attributes="0"/>
+                      <EmptySpace pref="326" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1677,7 +1677,7 @@
                       <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="127" max="32767" attributes="0"/>
+                      <EmptySpace pref="61" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1736,7 +1736,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="33" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;p&gt;&#xa;Movies &lt;br&gt;&#xa;Reading &lt;br&gt;&#xa;Photography &lt;br&gt;&#xa;Music&#xa;&lt;/p&gt;&#xa;&lt;/html&gt;"/>
+                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;p&gt;&#xa;Music lover &lt;br&gt;&#xa;Coffee enthusiast &lt;br&gt;&#xa;Explorer &lt;br&gt;&#xa;Cooking&lt;br&gt;&#xa;Gaming&lt;br&gt;&#xa;Learning &amp; Growing &#xa;&lt;/p&gt;&#xa;&lt;/html&gt;"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel22">
@@ -1750,7 +1750,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="66" green="33" red="0" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="There are so many ways to be brave in this world!"/>
+                <Property name="text" type="java.lang.String" value="You can&apos;t unloved someone you once loved"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel23">

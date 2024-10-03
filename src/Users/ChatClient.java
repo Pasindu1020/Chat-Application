@@ -56,7 +56,7 @@ public class ChatClient {
     }
 
     // Method to add a message bubble to the panel
-    public void addMessageToPanel(JPanel panel, String message, boolean isSender) {
+    public void addMessageToPanel(JPanel panel, String message) {
         // Create the message bubble (JLabel) for the chat
         JLabel messageBubble = new JLabel(message);
         messageBubble.setOpaque(true);
@@ -98,7 +98,7 @@ public class ChatClient {
                         // Extract the group message and add it to the group chat panel
                         String groupMessage = message.split("\\|", 2)[1];
                         // Append the received group message to the group chat panel
-                        addMessageToPanel(groupChatPanel, groupMessage, false);  // Align to the left for receiver
+                        addMessageToPanel(groupChatPanel, groupMessage);  // Align to the left for receiver
 
                     } else {
                         // Handle one-on-one messages
@@ -106,19 +106,19 @@ public class ChatClient {
                         String text = message.split(":", 2)[1];
                         switch (sender) {
                             case "Pasindu Harshamal":
-                                addMessageToPanel(pasinduPanel, text, false); 
+                                addMessageToPanel(pasinduPanel, text); 
                                 break;
                             case "Lourdes Shenuka":
-                                addMessageToPanel(lourdesPanel, text, false);
+                                addMessageToPanel(lourdesPanel, text);
                                 break;
                             case "Isheni Thamel":
-                                addMessageToPanel(isheniPanel, text, false);
+                                addMessageToPanel(isheniPanel, text);
                                 break;
                             case "Vimesh Gunasekaran":
-                                addMessageToPanel(vimeshPanel, text, false);
+                                addMessageToPanel(vimeshPanel, text);
                                 break;
                             case "Pramudi Premarathna":
-                                addMessageToPanel(pramudiPanel, text, false);
+                                addMessageToPanel(pramudiPanel, text);
                                 break;
                         }
                     }

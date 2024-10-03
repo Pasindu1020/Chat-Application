@@ -559,6 +559,7 @@ public class UserLourdes extends javax.swing.JFrame {
         jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         pasinduPanel.setBackground(new java.awt.Color(255, 255, 255));
+        pasinduPanel.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
         pasinduPanel.setLayout(new javax.swing.BoxLayout(pasinduPanel, javax.swing.BoxLayout.LINE_AXIS));
         jScrollPane4.setViewportView(pasinduPanel);
 
@@ -1005,7 +1006,7 @@ public class UserLourdes extends javax.swing.JFrame {
         String message = messageTextField.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(pasinduPanel, message, true);
+        addMessageToPanel(pasinduPanel, message);
         messageTextField.setText("");
     }//GEN-LAST:event_sendButtonActionPerformed
 
@@ -1014,7 +1015,7 @@ public class UserLourdes extends javax.swing.JFrame {
         String message = jTextField1.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(isheniPanel, message, true);
+        addMessageToPanel(isheniPanel, message);
         jTextField1.setText("");
     }//GEN-LAST:event_jButtonSendActionPerformed
 
@@ -1023,7 +1024,7 @@ public class UserLourdes extends javax.swing.JFrame {
         String message = jTextField6.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(vimeshPanel, message, true);
+        addMessageToPanel(vimeshPanel, message);
         jTextField6.setText("");
     }//GEN-LAST:event_jButtonSend4ActionPerformed
 
@@ -1032,11 +1033,11 @@ public class UserLourdes extends javax.swing.JFrame {
         String message = jTextField7.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(pramudiPanel, message, true);
+        addMessageToPanel(pramudiPanel, message);
         jTextField7.setText("");
     }//GEN-LAST:event_jButtonSend5ActionPerformed
 
-    public void addMessageToPanel(JPanel panel, String message, boolean isSender) {
+    public void addMessageToPanel(JPanel panel, String message) {
         // Create the message bubble (JLabel) for the chat
         JLabel messageBubble = new JLabel(message);
         messageBubble.setOpaque(true);

@@ -872,7 +872,7 @@ public class UserPramudi extends javax.swing.JFrame {
         jLabel21.setBackground(new java.awt.Color(0, 51, 102));
         jLabel21.setFont(new java.awt.Font("MV Boli", 0, 20)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel21.setText("<html>\n<p>\nDancing <br>\nMovies <br>\nReading <br>\nPhotography <br>\nMusic\n</p>\n</html>");
+        jLabel21.setText("<html>\n<p>\nDancing <br>\nMovies <br>\nReading <br>\nModeling <br>\nMusic\n</p>\n</html>");
 
         jLabel22.setBackground(new java.awt.Color(0, 51, 102));
         jLabel22.setFont(new java.awt.Font("MV Boli", 0, 20)); // NOI18N
@@ -1008,7 +1008,7 @@ public class UserPramudi extends javax.swing.JFrame {
         String receiver = "Pasindu Harshamal";
         String message = messageTextField.getText();
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(pasinduPanel, message, true);
+        addMessageToPanel(pasinduPanel, message);
         messageTextField.setText("");
     }//GEN-LAST:event_sendButtonActionPerformed
 
@@ -1017,7 +1017,7 @@ public class UserPramudi extends javax.swing.JFrame {
         String message = jTextField1.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(isheniPanel, message, true);
+        addMessageToPanel(isheniPanel, message);
         jTextField1.setText("");
     }//GEN-LAST:event_jButtonSendActionPerformed
 
@@ -1026,7 +1026,7 @@ public class UserPramudi extends javax.swing.JFrame {
         String message = jTextField6.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(vimeshPanel, message, true);
+        addMessageToPanel(vimeshPanel, message);
         jTextField6.setText("");
     }//GEN-LAST:event_jButtonSend4ActionPerformed
 
@@ -1039,11 +1039,11 @@ public class UserPramudi extends javax.swing.JFrame {
         String message = messageTextField2.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(lourdesPanel, message, true);
+        addMessageToPanel(lourdesPanel, message);
         messageTextField2.setText("");
     }//GEN-LAST:event_sendButton2ActionPerformed
 
-    public void addMessageToPanel(JPanel panel, String message, boolean isSender) {
+    public void addMessageToPanel(JPanel panel, String message) {
         // Create the message bubble (JLabel) for the chat
         JLabel messageBubble = new JLabel(message);
         messageBubble.setOpaque(true);

@@ -22,7 +22,7 @@ public class UserVimesh extends javax.swing.JFrame {
 
         pasinduPanel.setLayout(new BoxLayout(pasinduPanel, BoxLayout.Y_AXIS));
         isheniPanel.setLayout(new BoxLayout(isheniPanel, BoxLayout.Y_AXIS));
-        vimeshPanel.setLayout(new BoxLayout(vimeshPanel, BoxLayout.Y_AXIS));
+        lourdesPanel.setLayout(new BoxLayout(lourdesPanel, BoxLayout.Y_AXIS));
         pramudiPanel.setLayout(new BoxLayout(pramudiPanel, BoxLayout.Y_AXIS));
         groupChatPanel.setLayout(new BoxLayout(groupChatPanel, BoxLayout.Y_AXIS));
 
@@ -876,12 +876,12 @@ public class UserVimesh extends javax.swing.JFrame {
         jLabel21.setBackground(new java.awt.Color(0, 51, 102));
         jLabel21.setFont(new java.awt.Font("MV Boli", 0, 20)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel21.setText("<html>\n<p>\nMovies <br>\nReading <br>\nPhotography <br>\nMusic\n</p>\n</html>");
+        jLabel21.setText("<html>\n<p>\nMusic lover <br>\nCoffee enthusiast <br>\nExplorer <br>\nCooking<br>\nGaming<br>\nLearning & Growing \n</p>\n</html>");
 
         jLabel22.setBackground(new java.awt.Color(0, 51, 102));
         jLabel22.setFont(new java.awt.Font("MV Boli", 0, 20)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(0, 51, 102));
-        jLabel22.setText("There are so many ways to be brave in this world!");
+        jLabel22.setText("You can't unloved someone you once loved");
 
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Profile Vimesh.png"))); // NOI18N
 
@@ -908,7 +908,7 @@ public class UserVimesh extends javax.swing.JFrame {
                     .addGroup(jPanelProfileLayout.createSequentialGroup()
                         .addGap(128, 128, 128)
                         .addComponent(jLabel22)))
-                .addContainerGap(261, Short.MAX_VALUE))
+                .addContainerGap(326, Short.MAX_VALUE))
         );
         jPanelProfileLayout.setVerticalGroup(
             jPanelProfileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -925,7 +925,7 @@ public class UserVimesh extends javax.swing.JFrame {
                 .addComponent(jLabel20)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab3", jPanelProfile);
@@ -1018,7 +1018,7 @@ public class UserVimesh extends javax.swing.JFrame {
         String message = messageTextField.getText();  // Message typed by the user
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(pasinduPanel, message, true);
+        addMessageToPanel(pasinduPanel, message);
         messageTextField.setText("");
     }//GEN-LAST:event_sendButtonActionPerformed
 
@@ -1027,7 +1027,7 @@ public class UserVimesh extends javax.swing.JFrame {
         String message = jTextField1.getText();  // Message typed by the user
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(isheniPanel, message, true);
+        addMessageToPanel(isheniPanel, message);
         jTextField1.setText("");
     }//GEN-LAST:event_jButtonSendActionPerformed
 
@@ -1040,7 +1040,7 @@ public class UserVimesh extends javax.swing.JFrame {
         String message = jTextField7.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(pramudiPanel, message, true);
+        addMessageToPanel(pramudiPanel, message);
         jTextField7.setText("");
     }//GEN-LAST:event_jButtonSend5ActionPerformed
 
@@ -1049,11 +1049,11 @@ public class UserVimesh extends javax.swing.JFrame {
         String message = messageTextField2.getText();
 
         chatClient.sendMessageToUser(receiver, message);
-        addMessageToPanel(lourdesPanel, message, true);
+        addMessageToPanel(lourdesPanel, message);
         messageTextField2.setText("");
     }//GEN-LAST:event_sendButton2ActionPerformed
 
-    public void addMessageToPanel(JPanel panel, String message, boolean isSender) {
+    public void addMessageToPanel(JPanel panel, String message) {
         // Create the message bubble (JLabel) for the chat
         JLabel messageBubble = new JLabel(message);
         messageBubble.setOpaque(true);

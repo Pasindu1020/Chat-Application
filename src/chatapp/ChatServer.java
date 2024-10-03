@@ -53,7 +53,7 @@ class ClientHandler implements Runnable {
     private DataInputStream dis;
     private DataOutputStream dos;
 
-    // ClientHandler constructor (unchanged)
+    // ClientHandler constructor 
     public ClientHandler(Socket socket, String userName) {
         this.socket = socket;
         this.userName = userName;
