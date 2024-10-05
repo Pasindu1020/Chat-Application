@@ -2,12 +2,10 @@ package Users;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Font;
 import javax.swing.*;
 import java.io.*;
 import java.net.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 public class ChatClient {
 

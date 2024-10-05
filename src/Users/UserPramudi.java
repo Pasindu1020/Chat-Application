@@ -421,7 +421,7 @@ public class UserPramudi extends javax.swing.JFrame {
         jLabel11.setText("<html><p align = center>\n Box </p>\n</html>");
 
         jLabel32.setFont(new java.awt.Font("Rockwell", 1, 36)); // NOI18N
-        jLabel32.setText("<html><p align = center>Chater  </p>\n</html>");
+        jLabel32.setText("<html><p align = center>Chatter  </p>\n</html>");
 
         javax.swing.GroupLayout jPanelDefaultLayout = new javax.swing.GroupLayout(jPanelDefault);
         jPanelDefault.setLayout(jPanelDefaultLayout);

@@ -590,7 +590,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Rockwell" size="36" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p align = center&gt;Chater  &lt;/p&gt;&#xa;&lt;/html&gt;"/>
+                        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p align = center&gt;Chatter  &lt;/p&gt;&#xa;&lt;/html&gt;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
